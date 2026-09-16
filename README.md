@@ -4,12 +4,6 @@ This repository contains a small, formula-level reproduction of the classical ba
 
 > Omanakuttan et al., *Threshold for Fault-tolerant Quantum Advantage with the Quantum Approximate Optimization Algorithm*, arXiv:2504.01897.
 
-The current notebook focuses on Obsidian note 01:
-
-- random 8-SAT instance generation with `k = 8` and `r = m/n = 176`
-- Sparrow median time-to-solution scaling
-- Rand-9 parallelization model used for the classical baseline
-
 ## File
 
 - `ft-QAOA.ipynb`: main reproduction notebook.
