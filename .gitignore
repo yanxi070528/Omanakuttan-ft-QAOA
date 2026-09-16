@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+.jupyter/
+__pycache__/
+*.py[cod]
+paper_figures_repro.png
+repro-01-instances/
