@@ -1,0 +1,4 @@
+Rand-7 - Optimized shift: 99.10499368528399, Calculated lambda: 0.000297168430051296
+Rand-8 - Optimized shift: 23.172131671630094, Calculated lambda: 0.0002950089325291903
+Rand-9 - Optimized shift: 6.774964035648691, Calculated lambda: 0.0009790243677117985
+Rand-10 - Optimized shift: 19.002004113835643, Calculated lambda: 0.0005857208304640194
