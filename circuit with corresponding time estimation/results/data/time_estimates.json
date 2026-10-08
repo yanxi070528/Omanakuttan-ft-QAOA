@@ -1,0 +1,42 @@
+{
+  "source": "Omanakuttan et al., arXiv:2504.01897v1 (2025)",
+  "k": 8,
+  "n": 191,
+  "m": 33616,
+  "p": 253,
+  "c": 2112,
+  "nP": 27,
+  "d": 29,
+  "TLC_seconds": 2.9e-05,
+  "component_logical_cycles": {
+    "mixer": 27,
+    "phaser": 2151,
+    "OC": 59072.35553315368,
+    "O0": 30.309715312142995
+  },
+  "component_seconds": {
+    "mixer": 0.0007830000000000001,
+    "phaser": 0.062379,
+    "OC": 1.7130983104614566,
+    "O0": 0.0008789817440521469
+  },
+  "T_U_seconds": 15.979985999999998,
+  "T_AA_round_seconds": 33.673949292205506,
+  "success_model": 1.7662329712589863e-07,
+  "R_eq7_continuous": 1868.813176360292,
+  "T_eq7_seconds": 62930.320137361974,
+  "T_with_initial_U_seconds": 62946.30012336197,
+  "T_robust_main_text_approx_seconds": 251721.2805494479,
+  "robust_delta": 0.0625,
+  "robust_factor": 4,
+  "model_scope": "Paper Eq.(7) budget, not a runtime or success guarantee for the simulated circuit.",
+  "implemented_ft_schedule": false,
+  "coloring_computed": false,
+  "assumptions": {
+    "c": "Manually supplied color count; default 2112 is empirical 12r.",
+    "nP": "Manually supplied phase-synthesis cycles; default 27 is illustrative, not Table III cubic NT=24.",
+    "TLC": "d QEC rounds at the paper-assumed 1 microsecond per round.",
+    "success": "Instance-average 8-SAT model from the cited study; not the toy circuit probability."
+  },
+  "note": "Eqs.(10)-(11) are main-text approximations, not exact integer schedules. TACU, phase synthesis, factories, routing, training, resets and readout are not simulated. The robust factor is a paper protocol budget; the protocol is not implemented."
+}

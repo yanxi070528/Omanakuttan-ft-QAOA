@@ -1,0 +1,100 @@
+[
+  {
+    "stem": "01_full_QAOA_AA",
+    "title": "QAOA preparation + literal paper Eq.(6): time flows left to right",
+    "notes": [
+      "Four drawn data wires represent an arbitrary n-qubit register. Boxes are schematic, not executable.",
+      "Initial H -> U_QAOA prepares |psi>. Repeat O_C -> U_dg -> O_0 -> U exactly R times.",
+      "Each AA round: T_Q = 2p(T_phaser + T_mixer) + T_OC + T_O0. Eq.(7): T_q = R T_Q.",
+      "Literal Eq.(6), no outer H; preparation convention differs from Eqs.(2)-(3). See reading audit.",
+      "Initial preparation adds T_U (plus unspecified H/init costs). Final measurement/verification costs are unspecified."
+    ]
+  },
+  {
+    "stem": "02_QAOA_layer",
+    "title": "One forward QAOA layer: phaser first, mixer second",
+    "notes": [
+      "Layer l: exp(-i beta_l H_M) exp(-i gamma_l H_C), Eqs.(3)-(5); repeat l=1,...,p.",
+      "Parallel mixer: Rx(beta_l) on ALL n wires. T_mixer = nP T_LC [Eq.(8)], not n*nP*T_LC.",
+      "Whole phaser: T_phaser = (c+nP+4 ceil(log2 k)) T_LC [Eq.(9)]. k=8 gives +12.",
+      "One U_QAOA costs p(T_phaser+T_mixer). One U_dg costs the same in this resource model."
+    ]
+  },
+  {
+    "stem": "03_inverse_QAOA",
+    "title": "Inverse QAOA: reverse layer order AND gate order",
+    "notes": [
+      "Shown: the last inverse layer p, then the first inverse layer 1; intermediate layers omitted.",
+      "Forward layer: Phaser(gamma_l) -> Mixer(beta_l). Inverse: Mixer(-beta_l) -> Phaser(-gamma_l).",
+      "Run layers p,p-1,...,1. Qiskit .inverse() performs both reversals and angle sign changes.",
+      "The inverse contributes another p(T_phaser+T_mixer) in every AA round [Eq.(7)]."
+    ]
+  },
+  {
+    "stem": "04_8SAT_clause_phaser",
+    "title": "Ideal 8-SAT phaser: positive phase follows Eqs.(3)-(4), unlike Eq.(20)",
+    "notes": [
+      "Clause: x0 OR NOT x1 OR x2 OR ... OR x7. Positive literals receive X around the MCX.",
+      "P(+gamma) follows Eqs.(3)-(4); Eq.(20) prints the opposite sign. See the marked reading audit.",
+      "This MCX drawing explains semantics. It is NOT the optimized lattice-surgery circuit used to obtain Eq.(9).",
+      "Paper timing: one TACU phase gadget runs nP+4 ceil(log2 k) cycles; k=8 uses 7 CCZ states and 52 ancillas.",
+      "All m clauses form c parallel batches; the FULL phaser time is (c+nP+12) T_LC, not m times this gadget."
+    ]
+  },
+  {
+    "stem": "05_mixer_phase_basis",
+    "title": "Mixer as parallel phase gates in the X basis",
+    "notes": [
+      "Rx(beta)=exp(-i beta X/2) [paper Fig.1 caption; IBM RXGate definition].",
+      "H P(-beta) H = exp(-i beta/2) Rx(beta); the difference is a global phase per wire.",
+      "All n phase decompositions run in parallel with sufficient T-state factories.",
+      "T_mixer = nP T_LC [Eq.(8)]; nP is decomposition logical-cycle cost, not QAOA depth p."
+    ]
+  },
+  {
+    "stem": "06_SAT_oracle",
+    "title": "SAT oracle: compute clauses, AND, Z, uncompute",
+    "notes": [
+      "Executable illustration: n=8 variables, m=2 clauses, two clause flags and one all-clauses flag.",
+      "O_C |x> = (-1)^(C1(x) AND ... AND Cm(x)) |x>. All ancillas return to |0>.",
+      "Paper schedule: clause batches + binary AND trees + deliberate delays / ancilla recycling [Appendix C].",
+      "FULL oracle time: T_OC = 4c log2(km/c) T_LC [Eq.(10)], including compute and uncompute.",
+      "No separate paper formula allocates Eq.(10) exactly among these boxes; per-box timings are not invented."
+    ]
+  },
+  {
+    "stem": "07_zero_oracle",
+    "title": "Zero-state oracle: X sandwich around an all-ones phase flip",
+    "notes": [
+      "O_0 = I - 2|0...0><0...0| = X^n [controlled phase pi] X^n.",
+      "Only |0...0> receives a minus sign. H -> MCX -> H implements the all-ones controlled-Z phase.",
+      "T_O0 = 4 log2(n) T_LC [Eq.(11)]; this is an approximate FULL oracle cost, not n separate costs.",
+      "Paper implementation uses an n-qubit TACU gadget, n-1 CCZ states and logarithmic tree depth.",
+      "O_0 is used directly in Eq.(6), with no surrounding full-register H layers."
+    ]
+  },
+  {
+    "stem": "08_phaser_timing_schedule",
+    "title": "Phaser budget: dispatch plus startup and finish",
+    "notes": [
+      "Resource-budget schematic, not a serial gate schedule or the implemented MCX circuit.",
+      "Dispatch c disjoint batches at one batch per logical cycle, with separate ancillas in flight.",
+      "Startup before first dispatch plus finish after last dispatch fit within nP+4 ceil(log2 k).",
+      "Single task: AND write 3L + phase nP + measurement clear L; L=ceil(log2 k).",
+      "Source: p.11 Corollary IV.1 (upper bound), p.23 Appendix B; Eq.(9) uses c+nP+12 for k=8."
+    ]
+  },
+  {
+    "stem": "09_numerical_timing",
+    "title": "Numerical timing example",
+    "notes": [
+      "T_mixer = 0.783 ms [Eq.8]; T_phaser = 62.379 ms [Eq.9].",
+      "One U: 15.979986 s. One AA round: 33.673949 s [bracket in Eq.7].",
+      "Modeled success probability = 1.76623e-07; R = 1868.813 (continuous asymptotic estimate).",
+      "Eq.(7) AA-only: 17.4806 h; plus one initial U: 17.4851 h.",
+      "Main-text robust-AA overhead ~4x: 69.9226 h (protocol cost; Sec.II.B/IV.A).",
+      "Paper budget only; not a success/runtime guarantee for the literal Eq.(6) simulator.",
+      "c=2112 and nP=27 are selected illustrative inputs. Qiskit drawing qubits are NOT n=191 resource inputs."
+    ]
+  }
+]

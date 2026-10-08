@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "qiskit_version": "2.5.2",
+  "maximum_truth_table_error": 1.2246467991473532e-16,
+  "qaoa_reference_error": 1.2412670766236366e-16,
+  "iteration_reference_error": 3.887667216744191e-16,
+  "inverse_error": 4.457685769774389e-16,
+  "p_before": 0.6029093753453504,
+  "p_after": 0.5481054836242167,
+  "checked": "256-input 8-SAT clause; repeated literals and constants; phase sign; O0 n=1,2,3; single-clause OC; inverse; independent U and Eq.(6) matrices; three-round complex-state evolution; clean ancillas; unequal-angle and invalid-input rejection.",
+  "scope": "Ideal circuit semantics only; PASS does not validate FT compilation or standard-AA success scaling."
+}

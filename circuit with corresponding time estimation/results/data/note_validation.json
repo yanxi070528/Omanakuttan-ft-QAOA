@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "obsidian_image_links": 9,
+  "display_math_blocks": 30,
+  "notebook_cells": 58,
+  "executed_code_cells": 25,
+  "embedded_circuit_images": 9,
+  "checks": "Notebook schema, cell execution, clean circuit PNGs, relative image links, math delimiters and braces, exported numeric values."
+}
