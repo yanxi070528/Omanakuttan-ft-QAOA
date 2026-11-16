@@ -1,0 +1,3 @@
+﻿check,assignments,data_qubits,work_flags,max_abs_error,passed
+phaser_paper_eq4,1024,10,0,8.11481688872792e-17,True
+native_SAT_oracle_clean_flags,1024,10,8,5.590417235037943e-16,True

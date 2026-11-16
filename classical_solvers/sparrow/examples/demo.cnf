@@ -1,0 +1,7 @@
+c (x1 OR x2 OR x3) AND (NOT x1 OR x2 OR NOT x3)
+c AND (x1 OR NOT x2 OR x3) AND (NOT x1 OR NOT x2 OR x3)
+p cnf 3 4
+1 2 3 0
+-1 2 -3 0
+1 -2 3 0
+-1 -2 3 0

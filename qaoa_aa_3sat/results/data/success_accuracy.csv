@@ -1,0 +1,4 @@
+﻿method,SAT_outputs,trials_or_shots,trial_unit,SAT_rate,CI_low,CI_high,measurements_or_calls
+QAOA,945,1000,one measured circuit,0.945,0.9290916123226243,0.9575025726252315,1000
+QAOA+AA,963,1000,one measured fixed-R circuit,0.963,0.9494176025179306,0.9730388191244452,1000
+Sparrow,1000,1000,one native solver run,1.0,0.996173241514445,1.0,1000

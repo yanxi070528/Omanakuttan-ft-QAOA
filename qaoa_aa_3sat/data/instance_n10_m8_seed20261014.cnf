@@ -1,0 +1,10 @@
+c Shared CNF for Sparrow and QAOA
+p cnf 10 8
+-10 6 8 0
+5 -4 6 0
+-10 5 9 0
+-4 -2 6 0
+6 1 4 0
+8 -9 -3 0
+3 5 -9 0
+7 8 -10 0

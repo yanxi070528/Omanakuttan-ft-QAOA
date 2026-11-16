@@ -1,0 +1,147 @@
+{
+  "n": 10,
+  "m": 8,
+  "p": 3,
+  "AA_preparation_boxes": "A = U H^n and A dagger",
+  "standalone_H_rows_next_to_O0": 0,
+  "clause_order_1based": [
+    1,
+    7,
+    2,
+    6,
+    3,
+    4,
+    5,
+    8
+  ],
+  "gammas": [
+    0.41877652510798524,
+    -6.790429046336439,
+    -5.175913546506189
+  ],
+  "betas": [
+    -3.381515783851649,
+    2.117731909489515,
+    -0.7573940983759978
+  ],
+  "qaoa_amplitude_max_error": 1.484988143495895e-16,
+  "aa_amplitude_max_error": 7.251857904112426e-15,
+  "compute_mapping_max_error": 9.369313599642564e-17,
+  "flag_leakage": 4.934696602198643e-31,
+  "P0": 0.9854063425315326,
+  "P1": 0.8737187495936553,
+  "clause_mapping": [
+    {
+      "id": "C1",
+      "variables_1based": [
+        10,
+        6,
+        8
+      ],
+      "positive": [
+        false,
+        true,
+        true
+      ],
+      "flag": "a1"
+    },
+    {
+      "id": "C2",
+      "variables_1based": [
+        5,
+        4,
+        6
+      ],
+      "positive": [
+        true,
+        false,
+        true
+      ],
+      "flag": "a2"
+    },
+    {
+      "id": "C3",
+      "variables_1based": [
+        10,
+        5,
+        9
+      ],
+      "positive": [
+        false,
+        true,
+        true
+      ],
+      "flag": "a3"
+    },
+    {
+      "id": "C4",
+      "variables_1based": [
+        4,
+        2,
+        6
+      ],
+      "positive": [
+        false,
+        false,
+        true
+      ],
+      "flag": "a4"
+    },
+    {
+      "id": "C5",
+      "variables_1based": [
+        6,
+        1,
+        4
+      ],
+      "positive": [
+        true,
+        true,
+        true
+      ],
+      "flag": "a5"
+    },
+    {
+      "id": "C6",
+      "variables_1based": [
+        8,
+        9,
+        3
+      ],
+      "positive": [
+        true,
+        false,
+        false
+      ],
+      "flag": "a6"
+    },
+    {
+      "id": "C7",
+      "variables_1based": [
+        3,
+        5,
+        9
+      ],
+      "positive": [
+        true,
+        true,
+        false
+      ],
+      "flag": "a7"
+    },
+    {
+      "id": "C8",
+      "variables_1based": [
+        7,
+        8,
+        10
+      ],
+      "positive": [
+        true,
+        true,
+        false
+      ],
+      "flag": "a8"
+    }
+  ]
+}

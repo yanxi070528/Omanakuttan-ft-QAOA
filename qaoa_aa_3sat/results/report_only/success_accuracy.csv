@@ -1,0 +1,3 @@
+﻿method,valid_answers,samples_or_runs,observed_success
+QAOA (p=2),945,1000,0.945
+Sparrow,1000,1000,1.0

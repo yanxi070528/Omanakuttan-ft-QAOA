@@ -1,0 +1,78 @@
+{
+  "measured_at_Asia_Shanghai": "2026-11-10T23:12:56.906633+08:00",
+  "n": 10,
+  "m": 8,
+  "p": 3,
+  "parameter_source": "Original Pretrain p=3 trained_angles.csv; angles held fixed",
+  "gammas": [
+    0.41877652510798524,
+    -6.790429046336439,
+    -5.175913546506189
+  ],
+  "betas": [
+    -3.381515783851649,
+    2.117731909489515,
+    -0.7573940983759978
+  ],
+  "P_QAOA": 0.9854063425315326,
+  "R_paper_continuous": 0.7911925782602639,
+  "R_paper_floor": 0,
+  "R_fixed": 1,
+  "R_adjusted_from_shot_scan": 0,
+  "P_AA_fixed": 0.873718749593726,
+  "P_AA_adjusted": 0.9854063425315326,
+  "shots_per_fixed_circuit": 1000,
+  "R_scan_shots": 13000,
+  "Sparrow_runs": 1000,
+  "Sparrow_valid": 1000,
+  "crossover_points": {
+    "execution": {
+      "QAOA": [
+        {
+          "n": 12.564389682534872,
+          "time_s": 0.020021258380671838
+        }
+      ],
+      "aa-fixed": [
+        {
+          "n": 8.364853289218278,
+          "time_s": 0.019704851697472655
+        }
+      ],
+      "aa-adjusted": []
+    },
+    "training_plus_execution": {
+      "QAOA": [],
+      "aa-fixed": [],
+      "aa-adjusted": []
+    }
+  },
+  "runtime_metric": "direct measured wall time per execution",
+  "methods": [
+    "QAOA",
+    "aa-fixed",
+    "aa-adjusted",
+    "Sparrow"
+  ],
+  "crossover_scope": "Measured CPU simulator / native Sparrow execution times, without success-probability normalization",
+  "saved_main_pretrain_s": 0.23749609998776577,
+  "scan_n": [
+    6,
+    8,
+    10,
+    12,
+    14
+  ],
+  "scan_instances_per_n": 3,
+  "scan_sparrow_runs_per_instance": 30,
+  "python": "3.12.14",
+  "qiskit": "2.5.2",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "AA_scan_depths": [
+    1,
+    2,
+    3
+  ],
+  "AA_all_depth_scan_shots": 39000
+}

@@ -1,0 +1,9 @@
+numpy>=2.0
+scipy>=1.14
+matplotlib>=3.9
+qiskit>=2.3,<3
+pylatexenc>=2.10
+ipykernel
+nbformat
+nbclient
+jupyterlab

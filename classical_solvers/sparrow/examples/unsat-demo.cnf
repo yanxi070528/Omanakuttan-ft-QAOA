@@ -1,0 +1,10 @@
+c Deliberately contradictory. Sparrow should report UNKNOWN, never prove UNSAT.
+p cnf 3 8
+1 2 3 0
+1 2 -3 0
+1 -2 3 0
+1 -2 -3 0
+-1 2 3 0
+-1 2 -3 0
+-1 -2 3 0
+-1 -2 -3 0

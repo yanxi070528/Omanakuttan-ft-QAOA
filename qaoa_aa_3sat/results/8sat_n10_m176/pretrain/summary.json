@@ -1,0 +1,20 @@
+{
+  "n": 10,
+  "m": 176,
+  "k": 8,
+  "cnf_name": "instance_8sat_n10_m176_seed20261116.cnf",
+  "p_selected": 3,
+  "objective": "paper_v1_Eq4_H_C",
+  "mean_H_C": -175.91213340637813,
+  "P_sat_exact": 0.9336221391937229,
+  "QAOA_valid_samples": 935,
+  "Sparrow_valid_runs": 1000,
+  "trials_per_method": 1000,
+  "main_pretrain_s": 0.2828896000282839,
+  "sparrow_median_wall_s": 0.025158450000000002,
+  "phase_max_error": 5.981600482320992e-14,
+  "state_max_error": 2.7974161407501404e-13,
+  "clause_view_max_error": 1.545754455680272e-16,
+  "circuit_view_max_error": 4.543991146883966e-15,
+  "cnf_sha256": "8512290e948e1a1167a2070ee1be58c95daa6219bf48640116463131208a576b"
+}

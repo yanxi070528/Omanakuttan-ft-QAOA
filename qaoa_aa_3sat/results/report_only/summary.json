@@ -1,0 +1,17 @@
+{
+  "n": 10,
+  "m": 8,
+  "p_selected": 2,
+  "objective": "paper_v1_Eq4_H_C",
+  "mean_H_C": -7.946089711033137,
+  "P_sat_exact": 0.9558699561672634,
+  "QAOA_valid_samples": 945,
+  "Sparrow_valid_runs": 1000,
+  "trials_per_method": 1000,
+  "main_pretrain_s": 0.07896879999316297,
+  "sparrow_median_wall_s": 0.015491350000000001,
+  "phase_max_error": 8.11481688872792e-17,
+  "state_max_error": 1.939479807224432e-16,
+  "clause_view_max_error": 1.7554167342883506e-16,
+  "circuit_view_max_error": 1.1364755910069911e-16
+}

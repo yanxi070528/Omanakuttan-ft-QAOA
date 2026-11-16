@@ -1,0 +1,5 @@
+﻿block,seconds_model
+A: initial H + p phaser/mixer layers,1.720000000000001e-05
+O_C: compute + phase + uncompute,5.465000000000021e-05
+O_0: zero-state reflection,0.00010234999999999968
+"Full one-shot circuit, R=0",1.9200000000000013e-05

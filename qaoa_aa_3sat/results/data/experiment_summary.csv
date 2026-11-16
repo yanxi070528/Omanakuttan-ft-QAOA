@@ -1,0 +1,2 @@
+﻿cost_definition,expected_cost,n,m,p,shots_per_fixed_circuit,R_fixed,P_QAOA_exact,P_AA_exact,QAOA_SAT_shots,AA_SAT_shots,Sparrow_runs,Sparrow_SAT_runs,main_pretrain_s,python,qiskit,numpy,scipy,clause_view_max_error,circuit_view_max_error
+paper_v1_Eq4_negative_satisfied_clauses,-7.946089711033137,10,8,2,1000,0,0.9558699561672634,0.9558699561672634,945,963,1000,1000,0.0773336999991443,3.14.2,2.3.0,2.4.2,1.17.0,1.7554167342883506e-16,1.1364755910069911e-16

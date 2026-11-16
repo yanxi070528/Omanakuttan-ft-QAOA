@@ -1,0 +1,9 @@
+﻿clause,literals
+1,(NOT x10 OR x6 OR x8)
+2,(x5 OR NOT x4 OR x6)
+3,(NOT x10 OR x5 OR x9)
+4,(NOT x4 OR NOT x2 OR x6)
+5,(x6 OR x1 OR x4)
+6,(x8 OR NOT x9 OR NOT x3)
+7,(x3 OR x5 OR NOT x9)
+8,(x7 OR x8 OR NOT x10)

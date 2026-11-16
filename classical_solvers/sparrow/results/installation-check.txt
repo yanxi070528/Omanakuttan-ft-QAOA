@@ -1,0 +1,41 @@
+s SATISFIABLE
+v -1 -2 3 4 5 6 7 -8 9 10 11 12 13 -14 -15 16 -17 -18 19 20 21 22 23 -24 -25 -26 -27 28 29 -30 -31 -32 0
+c Instance name       :  C:\Users\yanxi\AppData\Local\Temp\sparrow-9173e56328774436aa9eba4aa8c06f65.cnf
+c Number of variables :  32
+c Number of literals  :  64
+c Number of Clauses   :  800
+c MaxNumOccurences    :  124
+c MaxClauseSize       :  8
+c MinClauseSize       :  8
+c Ratio               :  25.0000
+c Parameter setting   :  7 SAT
+
+c Sparrow 2014 Parameteres: 
+c c1                  : 6.5000
+c c2                  : 4
+c c3                  : 100000
+c smoothing prob.     : 0.830
+c seed                : 17
+c XOR implementation  : yes
+c using:              : random clause selection
+c maxTries            : 1
+c maxFlips            : 1000000
+c timeout             : -1sec
+c -->Starting solver  : 
+
+c EndStatistics:
+c numFlips                      : 2        
+c numProbWalks                  : 1         (50.00%) 
+c gradientWalks                 : 1         (50.00%) 
+c numSmooth                     : 0         (0.00%) 
+c numWeight                     : 0         (0.00%) 
+c Try CPU Time                  : 0.015   
+c totalTries                    : 0        
+c totalFlips                    : 1        
+c flips/sec                     : 67      
+c Total CPU Time                : 0.015   sec
+
+Result: SATISFIABLE
+Input: D:\桌面\hkust\urop\code\classical_solvers\sparrow\examples\demo-8sat.cnf
+Wall time: 0.032 s
+Native exit code: 10

@@ -1,0 +1,12 @@
+{
+  "n": 10,
+  "m": 176,
+  "k": 8,
+  "clause_density": 17.6,
+  "seed": 20261116,
+  "CNF": "instance_8sat_n10_m176_seed20261116.cnf",
+  "generation": "uniform variable subsets and literal signs, duplicate clauses rejected; no planted assignment",
+  "satisfying_assignments": 513,
+  "uniform_success": 0.5009765625,
+  "sha256": "8512290e948e1a1167a2070ee1be58c95daa6219bf48640116463131208a576b"
+}

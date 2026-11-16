@@ -1,0 +1,7 @@
+﻿metric,method,interpolated_n,crossover_time_ms
+execution,QAOA,NONE,NONE
+execution,aa-fixed,NONE,NONE
+execution,aa-adjusted,NONE,NONE
+training_plus_execution,QAOA,NONE,NONE
+training_plus_execution,aa-fixed,NONE,NONE
+training_plus_execution,aa-adjusted,NONE,NONE

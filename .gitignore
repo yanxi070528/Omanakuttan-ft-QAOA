@@ -4,3 +4,8 @@ __pycache__/
 *.py[cod]
 paper_figures_repro.png
 repro-01-instances/
+
+classical_solvers/sparrow/build/
+.vscode/
+.mpl_cache/
+.chart-data*/

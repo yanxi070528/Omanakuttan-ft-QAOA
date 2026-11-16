@@ -1,0 +1,7 @@
+﻿metric,method,interpolated_n,crossover_time_ms
+execution,QAOA,12.564389682534872,20.02125838067184
+execution,aa-fixed,8.364853289218278,19.704851697472655
+execution,aa-adjusted,NONE,NONE
+training_plus_execution,QAOA,NONE,NONE
+training_plus_execution,aa-fixed,NONE,NONE
+training_plus_execution,aa-adjusted,NONE,NONE

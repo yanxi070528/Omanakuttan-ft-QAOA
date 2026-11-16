@@ -1,0 +1,5 @@
+﻿method,most_frequent_output,SAT,count_in_1000,observed_output_P,exact_output_P
+Sparrow,0101010100,True,9,0.009,empirical only
+QAOA,0001000110,True,8,0.008,0.0016977714610812706
+AA fixed,1010110110,False,13,0.013,0.006728996613219686
+AA adjusted,0100001001,True,7,0.007,0.002142171463292576

@@ -1,0 +1,79 @@
+{
+  "measured_at_Asia_Shanghai": "2026-11-16T19:37:36.293665+08:00",
+  "n": 10,
+  "m": 176,
+  "k": 8,
+  "p": 3,
+  "CNF": "instance_8sat_n10_m176_seed20261116.cnf",
+  "oracle_qubits": 186,
+  "parameter_source": "New 8-SAT Pretrain p=3 trained_angles.csv; angles held fixed",
+  "gammas": [
+    0.030251981324361535,
+    -5.47458259766326,
+    -1.9438654424711346
+  ],
+  "betas": [
+    -2.399309744564762,
+    -0.207078003495238,
+    0.16133375283204784
+  ],
+  "P_QAOA": 0.9336221391937229,
+  "R_paper_continuous": 0.8128385838313256,
+  "R_paper_floor": 0,
+  "R_fixed": 1,
+  "R_adjusted_from_shot_scan": 12,
+  "P_AA_fixed": 0.5036643471220518,
+  "P_AA_adjusted": 0.947464163330728,
+  "shots_per_fixed_circuit": 1000,
+  "R_scan_shots": 13000,
+  "AA_scan_depths": [
+    1,
+    2,
+    3
+  ],
+  "AA_all_depth_scan_shots": 39000,
+  "Sparrow_runs": 1000,
+  "Sparrow_valid": 1000,
+  "crossover_points": {
+    "execution": {
+      "QAOA": [],
+      "aa-fixed": [],
+      "aa-adjusted": []
+    },
+    "training_plus_execution": {
+      "QAOA": [],
+      "aa-fixed": [],
+      "aa-adjusted": []
+    }
+  },
+  "runtime_metric": "direct measured wall time per execution",
+  "methods": [
+    "QAOA",
+    "aa-fixed",
+    "aa-adjusted",
+    "Sparrow"
+  ],
+  "crossover_scope": "Measured compiled CPU statevector / native Sparrow execution times, without success-probability normalization",
+  "saved_main_pretrain_s": 0.2828896000282839,
+  "scan_n": [
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "scan_instances_per_n": 3,
+  "scan_sparrow_runs_per_instance": 30,
+  "python": "3.12.14",
+  "qiskit": "2.5.2",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "cnf_sha256": "8512290e948e1a1167a2070ee1be58c95daa6219bf48640116463131208a576b",
+  "phase_precompilation_in_execution_time": false,
+  "R_selection_in_execution_time": false,
+  "timing_implementation": "Exact compiled NumPy data-register statevector; every layer uses all 176 clauses",
+  "clause_ancillas": 176,
+  "counter_bits": 0,
+  "ancilla_method": "one flag per clause",
+  "oracle_change_note": "Same CNF and exact data-register oracle; original measured timing and statistics preserved."
+}
