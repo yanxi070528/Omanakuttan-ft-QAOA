@@ -14,7 +14,9 @@ Oracle 沿用每条子句一个辅助位的方法：a1 存 C1，直到 a176 存 
 
 ## 本地运行
 
-在仓库根目录安装依赖：
+macOS 上单独运行经典求解器，先在仓库根目录执行 `./classical_solvers/sparrow/build.sh`，再执行 `python3 classical_solvers/sparrow/benchmark_8sat.py`。
+
+在 Windows 上运行完整 Notebook，可在仓库根目录安装依赖：
 
 ```powershell
 python -m pip install -r qaoa_aa_3sat/requirements.txt

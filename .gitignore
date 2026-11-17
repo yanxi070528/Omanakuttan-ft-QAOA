@@ -9,3 +9,4 @@ classical_solvers/sparrow/build/
 .vscode/
 .mpl_cache/
 .chart-data*/
+classical_solvers/sparrow/bin/sparrow

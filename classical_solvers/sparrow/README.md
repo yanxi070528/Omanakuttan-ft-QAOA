@@ -1,4 +1,25 @@
-# Sparrow 本地使用指南（Windows）
+# Sparrow 本地使用指南
+
+## macOS
+
+在仓库根目录用 Apple Clang 编译，然后运行 8-SAT 主实例。编译器由 Xcode Command Line Tools 提供。
+
+```sh
+./classical_solvers/sparrow/build.sh
+./classical_solvers/sparrow/bin/sparrow --randomc 1 -a --runs 1 --maxflips 1000000 qaoa_aa_3sat/data/instance_8sat_n10_m176_seed20261116.cnf 1
+```
+
+找到解时，程序会打印 `s SATISFIABLE` 和赋值，退出码为 10。两个 8-SAT Notebook 会自动找到本机程序。Mac 构建时对上游源码的副本应用两处修复：为按 1 起始编号的邻居表分配最后一个元素，并在使用默认参数时初始化子句选择函数。
+
+复测主实例并与仓库实验 CSV 比较，只需 Python 3 标准库。省略 `--output` 可仅打印统计。
+
+```sh
+python3 classical_solvers/sparrow/benchmark_8sat.py --output sparrow-local.csv
+```
+
+测试沿用 AA Notebook 的 3 次预热、种子 1–1000、每次最多 100 万次翻转和 5 秒超时。每次单独启动进程，从启动调用计时到收取输出，之后逐子句验解。不同平台的 C 库可能为同一种子生成不同的随机序列。对照数据取自 `04_sparrow_1000_runs.csv`，云端版本保存的是 Windows 测量；重跑完整 Notebook 会更新该文件。
+
+## Windows
 
 已编译为 Windows 64 位程序，不需要 Python、Qiskit 或 WSL 才能运行。
 

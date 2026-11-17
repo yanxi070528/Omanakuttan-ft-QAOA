@@ -1,0 +1,19 @@
+--- sparrow.c
++++ sparrow.c
+@@ -327 +327 @@
+-	neighbourVar = (int**) malloc(sizeof(int*) * numVars);
++	neighbourVar = (int**) malloc(sizeof(int*) * (numVars + 1));
+@@ -1133,10 +1133,3 @@
+-	if (randomCspec){
+-	if (randomC)
+-		pickClause = pickClauseRandom;
+-	else
+-		pickClause = pickClauseF;
+-	}else
+-		if (maxClauseSize!=minClauseSize){
+-			pickClause = pickClauseF;
+-			randomC = 0;
+-		}
++	if (!randomCspec && maxClauseSize != minClauseSize)
++		randomC = 0;
++	pickClause = randomC ? pickClauseRandom : pickClauseF;
