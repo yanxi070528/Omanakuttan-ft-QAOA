@@ -1,0 +1,84 @@
+{
+  "platform": "Windows-11-10.0.26300-SP0",
+  "measured_at": "2026-11-18T00:19:58.515343+08:00",
+  "source_commit": "a4d5c11",
+  "n_values": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "instances_per_n": 3,
+  "k": 8,
+  "density": 17.6,
+  "p": 3,
+  "R_fixed": 1,
+  "R_adjusted_selection": "highest exact success within integers 0..12; lower R breaks exact ties",
+  "quantum_repeats_per_formula": 9,
+  "sparrow_repeats_per_formula": 30,
+  "quantum_raw_timings": 810,
+  "Sparrow_verified_models": 900,
+  "combined_timing_rows": 1710,
+  "quantum_scope": "compiled exact data-register CPU statevector; prepare/AA/sample/check",
+  "sparrow_scope": "native subprocess wall time; includes launch and output",
+  "per_layer_phase_compilation_timed": false,
+  "R_selection_timed": false,
+  "training_in_right_panel": "recorded independent fit time including shallower warm starts",
+  "mac_reference": "Section 9 only: Mac M2 n=10, 1000 runs, 2.4819375 ms median; not a scaling curve",
+  "crossings": {
+    "execution": {
+      "QAOA": [
+        {
+          "n": 15.932868083094275,
+          "time_s": 0.024099626099381447,
+          "n_low": 15,
+          "n_high": 16,
+          "direction": "simulator becomes slower"
+        }
+      ],
+      "aa-fixed": [
+        {
+          "n": 15.345021415821583,
+          "time_s": 0.023582487744707246,
+          "n_low": 15,
+          "n_high": 16,
+          "direction": "simulator becomes slower"
+        }
+      ],
+      "aa-adjusted": [
+        {
+          "n": 12.596668670016907,
+          "time_s": 0.022678432491218755,
+          "n_low": 12,
+          "n_high": 13,
+          "direction": "simulator becomes slower"
+        },
+        {
+          "n": 13.625215928541156,
+          "time_s": 0.0227443479744141,
+          "n_low": 13,
+          "n_high": 14,
+          "direction": "simulator becomes faster"
+        },
+        {
+          "n": 14.134249858659356,
+          "time_s": 0.022861715959678362,
+          "n_low": 14,
+          "n_high": 15,
+          "direction": "simulator becomes slower"
+        }
+      ]
+    },
+    "training_plus_execution": {
+      "QAOA": [],
+      "aa-fixed": [],
+      "aa-adjusted": []
+    }
+  }
+}

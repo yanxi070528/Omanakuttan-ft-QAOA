@@ -36,9 +36,47 @@
   "Sparrow_valid": 1000,
   "crossover_points": {
     "execution": {
-      "QAOA": [],
-      "aa-fixed": [],
-      "aa-adjusted": []
+      "QAOA": [
+        {
+          "n": 15.932868083094275,
+          "time_s": 0.024099626099381447,
+          "n_low": 15,
+          "n_high": 16,
+          "direction": "simulator becomes slower"
+        }
+      ],
+      "aa-fixed": [
+        {
+          "n": 15.345021415821583,
+          "time_s": 0.023582487744707246,
+          "n_low": 15,
+          "n_high": 16,
+          "direction": "simulator becomes slower"
+        }
+      ],
+      "aa-adjusted": [
+        {
+          "n": 12.596668670016907,
+          "time_s": 0.022678432491218755,
+          "n_low": 12,
+          "n_high": 13,
+          "direction": "simulator becomes slower"
+        },
+        {
+          "n": 13.625215928541156,
+          "time_s": 0.0227443479744141,
+          "n_low": 13,
+          "n_high": 14,
+          "direction": "simulator becomes faster"
+        },
+        {
+          "n": 14.134249858659356,
+          "time_s": 0.022861715959678362,
+          "n_low": 14,
+          "n_high": 15,
+          "direction": "simulator becomes slower"
+        }
+      ]
     },
     "training_plus_execution": {
       "QAOA": [],
@@ -53,14 +91,19 @@
     "aa-adjusted",
     "Sparrow"
   ],
-  "crossover_scope": "Measured compiled CPU statevector / native Sparrow execution times, without success-probability normalization",
+  "crossover_scope": "All four methods remeasured on the same Windows machine; no success-probability normalization",
   "saved_main_pretrain_s": 0.2828896000282839,
   "scan_n": [
     8,
     9,
     10,
     11,
-    12
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
   ],
   "scan_instances_per_n": 3,
   "scan_sparrow_runs_per_instance": 30,
@@ -75,5 +118,9 @@
   "clause_ancillas": 176,
   "counter_bits": 0,
   "ancilla_method": "one flag per clause",
-  "oracle_change_note": "Same CNF and exact data-register oracle; original measured timing and statistics preserved."
+  "oracle_change_note": "Same CNF and exact data-register oracle; original measured timing and statistics preserved.",
+  "crossover_measured_at": "2026-11-18T00:19:58.515343+08:00",
+  "crossover_platform": "Windows-11-10.0.26300-SP0",
+  "crossover_quantum_repeats_per_instance": 9,
+  "crossover_parameter_source": "Independent p=1,2,3 training per formula; recorded fit times retained when cached"
 }

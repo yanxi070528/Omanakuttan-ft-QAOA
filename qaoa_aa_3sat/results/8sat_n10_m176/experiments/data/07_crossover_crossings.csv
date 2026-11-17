@@ -1,7 +1,9 @@
-﻿metric,method,interpolated_n,crossover_time_ms
-execution,QAOA,NONE,NONE
-execution,aa-fixed,NONE,NONE
-execution,aa-adjusted,NONE,NONE
-training_plus_execution,QAOA,NONE,NONE
-training_plus_execution,aa-fixed,NONE,NONE
-training_plus_execution,aa-adjusted,NONE,NONE
+﻿metric,method,interpolated_n,crossover_time_ms,bracket_n_low,bracket_n_high,direction
+execution,QAOA,15.932868083094275,24.099626099381446,15,16,simulator becomes slower
+execution,aa-fixed,15.345021415821583,23.582487744707247,15,16,simulator becomes slower
+execution,aa-adjusted,12.596668670016907,22.678432491218754,12,13,simulator becomes slower
+execution,aa-adjusted,13.625215928541156,22.7443479744141,13,14,simulator becomes faster
+execution,aa-adjusted,14.134249858659356,22.861715959678364,14,15,simulator becomes slower
+training_plus_execution,QAOA,NONE,NONE,NONE,NONE,NONE
+training_plus_execution,aa-fixed,NONE,NONE,NONE,NONE,NONE
+training_plus_execution,aa-adjusted,NONE,NONE,NONE,NONE,NONE

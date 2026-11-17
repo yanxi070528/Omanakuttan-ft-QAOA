@@ -26,4 +26,7 @@ aa-fixed 固定 R=1，aa-adjusted 扫描 R=0…12。A / A† 包含完整制备�
 
 旧 3-SAT 数据和旧报告仍保留，供历史报告引用。`results/report_only`、`results/meeting_experiments`、`results/pretrain_aa_integrated` 中的旧数字不属于当前 8-SAT 实验。项目目录名 `qaoa_aa_3sat` 暂沿用，避免 IDE 路径失效。
 
-时间比较采用精确编译 CPU 态矢量与原生 Sparrow，按实际毫秒显示，包含一次测量/求解。预编译、训练、R 选择分别说明，没有将其解释为真实量子硬件速度。规模扫描为 n=8、9、10、11、12，每个规模三份 8-SAT 实例，m≈17.6n；观察不到交点时如实报告。
+时间比较采用精确编译 CPU 态矢量与原生 Sparrow，按实际毫秒显示，包含一次测量/求解。预编译、训练、R 选择分别说明，没有将其解释为真实量子硬件速度。规模扫描已扩大为 n=8…17，每个规模三份 8-SAT 实例，m≈17.6n；观察不到交点时如实报告。
+
+
+最新 [crossover 扩展与交点说明](notes/crossover_扩展规模与交点说明.md)：第 10 节四种方法统一在 Windows 实测，第 9 节保留新拉取的 Mac M2 主实例参考值。
